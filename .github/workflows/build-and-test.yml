@@ -25,6 +25,6 @@ jobs:
 
       - name: Build and test
         run: |
-          chmod +x ./mvnw
           cd ${{ matrix.directory }}
+          chmod +x ./mvnw
           ./mvnw clean install
